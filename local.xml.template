@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * {license_notice}
+ *
+ * @category   Mage
+ * @package    Mage_Core
+ * @copyright  {copyright}
+ * @license    {license_link}
+ */
+-->
+<config>
+    <global>
+        <install>
+            <date>{{date}}</date>
+        </install>
+        <crypt>
+            <key>{{key}}</key>
+        </crypt>
+        <disable_local_modules>false</disable_local_modules>
+        <resources>
+            <db>
+                <table_prefix>{{db_prefix}}</table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+                    <host>{{db_host}}</host>
+                    <username>{{db_user}}</username>
+                    <password>{{db_pass}}</password>
+                    <dbname>{{db_name}}</dbname>
+                    <initStatements>{{db_init_statemants}}</initStatements>
+                    <model>{{db_model}}</model>
+                    <type>{{db_type}}</type>
+                    <pdoType>{{db_pdo_type}}</pdoType>
+                    <active>1</active>
+                </connection>
+            </default_setup>
+        </resources>
+        <session_save>{{session_save}}</session_save>
+        <areas>
+            <adminhtml>
+                <frontName>{{backend_frontname}}</frontName>
+            </adminhtml>
+        </areas>
+    </global>
+</config>

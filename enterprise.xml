@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding="utf-8" ?>
+<!--
+/**
+ * {license_notice}
+ *
+ * @category    Enterprise
+ * @copyright   {copyright}
+ * @license     {license_link}
+ */
+-->
+<config>
+    <global>
+        <cache>
+            <request_processors>
+                <ee>Enterprise_PageCache_Model_Processor</ee>
+            </request_processors>
+        </cache>
+        <full_page_cache>
+            <backend_options>
+                <cache_dir>full_page_cache</cache_dir>
+            </backend_options>
+        </full_page_cache>
+        <skip_process_modules_updates>0</skip_process_modules_updates>
+        <di>
+            <Mage_Core_Model_Cache>
+                <parameters>
+                    <cacheOptions>
+                        <request_processors>
+                            <ee>Enterprise_PageCache_Model_Processor</ee>
+                        </request_processors>
+                    </cacheOptions>
+                </parameters>
+            </Mage_Core_Model_Cache>
+        </di>
+    </global>
+</config>
